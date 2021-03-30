@@ -2,6 +2,18 @@
 
 # Getting Started
 
+```
+Task: Implement a cypress test suite to create a successful application with divido.
+
+Test:
+1. Create an application proposal with the code below via BE. Do this using cypress request functionality.
+2. Retrieve the application 'token' from the response
+3. Append the token to the following url "https://application.sandbox.divido.com/#/token/{{token}}"
+4. Now visit the url
+5. Complete the Application form using any test details
+```
+
+
 ```sh
 git pull git@github.com:dividohq/qa-cypress-chg-js.git
 
@@ -10,8 +22,7 @@ cd qa-cypress-chg-js
 yarn && yarn e2e
 ```
 
-1.
-
+Code to create application proposal via BE (API_KEY will be sent to you separately):
 ```sh
 # Create new application for merchant.
 curl -X "POST" "https://merchant-api.api.sandbox.divido.net/applications" \
@@ -55,10 +66,4 @@ curl -X "POST" "https://merchant-api.api.sandbox.divido.net/applications" \
     }
   ]
 }'
-```
-
-2.
-
-```
-https://application.sandbox.divido.com/#/token/{{token}}
 ```
