@@ -1,0 +1,12 @@
+{
+  "name": "qa-cypress-chg-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "e2e": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^6.8.0"
+  }
+}
